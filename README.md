@@ -1,6 +1,6 @@
 ### 🚀 Welcome to my new project Website Landing Page Cootels!
 
-Deployment project:  https://irliss.github.io/website-landing-page---cootels
+Deployment project:  https://irliss.github.io/cootels
 
 #### Screen resolution in the context of responsive design for this project
 
