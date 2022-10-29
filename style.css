@@ -69,6 +69,16 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: #848fac;
+    transition: all ease-in-out .5s;
+}
+
+a:active {
+    font-weight: 900;
+    transition: all ease-in-out .5s;
+}
+
 ul li {
     list-style: none;
 }
@@ -117,7 +127,6 @@ h4 {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 20px;
-    line-height: 150%;
     color: #192252;
 }
 
@@ -321,6 +330,25 @@ body._lock {
     align-items: center;
 }
 
+.rooms__card-link-arrow:hover img {
+    position: relative;
+    animation-name: link-arr;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes link-arr  {
+    from {
+        left: 0;
+    }
+    50% {
+        left: 10px;
+    }
+    to {
+        left: 0;
+    }
+}
+
 .rooms__card-link-arrow img {
     max-width: 20px;
     max-height: 20px;
@@ -509,8 +537,18 @@ body._lock {
 .footer__social-flex {
     margin: 0 24px 0 0;
 }
+
 .footer__social-flex:last-child {
     margin: 0;
+}
+
+.footer__social-links svg {
+    fill: #fff;
+}
+
+.footer__social-links svg:hover {
+    fill: #848fac;
+    transition: all ease-in-out .5s;
 }
 
 .footer__menu-item-link {
@@ -560,6 +598,7 @@ body._lock {
     -webkit-transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
     transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
     opacity: 1;
+    border-radius: 4px;
 }
 
 .popup__body {
@@ -612,6 +651,7 @@ body._lock {
     border: 1px solid #192252;
 }
 
+.popup__form .popup__email,
 .popup__form .popup__password {
     width: 100%;
     margin: 0 0 16px 0;
@@ -622,6 +662,7 @@ body._lock {
     line-height: 150%;
     color: #192252;
     border: 1px solid #d9dbde;
+    border-radius: 4px;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
@@ -642,6 +683,7 @@ body._lock {
     transition: all .3s ease;
     background: #192252;
     border: 1px solid #192252;
+    border-radius: 4px;
 }
 
 .popup__form .popup__btn:hover {
@@ -881,6 +923,7 @@ body._lock {
 
     .footer__menu-item-link:last-child {
         margin: 0;
+        width: 110px;
     }
 }
 @media (max-width: 768px) {
@@ -1342,14 +1385,14 @@ body._lock {
 .fotorama__dot {
     width: 8px;
     height: 8px;
-    background: rgba(250, 176, 71, 0.35);
+    background: rgba(255, 98, 10, .12);
     border: none;
 }
 
 .fotorama__nav__frame.fotorama__active .fotorama__dot {
     width: 8px;
     height: 8px;
-    background: #FAB047;
+    background: #ff620a;
     border: none;
 }
 
